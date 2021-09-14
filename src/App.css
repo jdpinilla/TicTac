@@ -1,0 +1,75 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+
+}
+table{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+th {
+  padding: 0 10px;
+}
+button{
+  font-size: 30px;
+  margin-bottom: 50px;
+  background: none;
+  color: white;
+  font-weight: 600;
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 10px 40px;
+}
+.board {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+}
+
+.square {
+  flex: 33%;
+  height: 100%;
+  border: 1px solid White;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 130px;
+  color: White;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.square:active {
+  background-color: #64f4c4;
+}
+
+.contain {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.number-Wins {
+  color: yellow;
+  font-size: 100px;
+}
